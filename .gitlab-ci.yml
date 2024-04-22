@@ -1,25 +1,11 @@
-image: "node:16-alpine"
-
-stages:
-  - build
-  - test
-  - deploy
-
-build:
-  stage: build
-  script:
-    - yarn install --frozen-lockfile --check-files --non-interactive
-    - yarn build
-  artifacts:
-    paths:
-      - public
+image: busybox
 
 pages:
   stage: deploy
   script:
-    - echo 'Pages deployment job'
+    - echo "The site will be deployed to $CI_PAGES_URL"
   artifacts:
     paths:
       - public
-  only:
-    - main
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
