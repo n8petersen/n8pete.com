@@ -1,4 +1,4 @@
-image: busybox
+image: node:latest
 
 pages:
   stage: deploy
@@ -9,5 +9,5 @@ pages:
   artifacts:
     paths:
       - public
-  rules:
-    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+  # rules:
+  #   - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
