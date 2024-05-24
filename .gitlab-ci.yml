@@ -1,9 +1,11 @@
-image: busybox
+image: node:latest
 
 pages:
   stage: deploy
   script:
     - echo "The site will be deployed to $CI_PAGES_URL"
+    - npm i
+    - npx tailwindcss -i ./public/input.css -o ./public/output.css --minify
   artifacts:
     paths:
       - public
