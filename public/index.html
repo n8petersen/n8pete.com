@@ -10,53 +10,66 @@
     <nav
       class="border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800"
     >
-      <div class="flex items-center justify-between p-4">
-        <a href="#" class="group flex items-center">
+      <div class="flex items-center flex-wrap justify-between">
+        <a href="#" class="group flex items-center ml-5 p-2">
           <img
-            class="h-16 rounded-full outline-dotted outline-offset-2 outline-emerald-400"
+            class="h-10 lg:h-16 md:h-12 rounded-full outline-dotted outline-offset-2 outline-emerald-400"
             src="./img/nathan-profile.jpg"
             alt="Nathan Petersen Profile Picture"
           />
-          <p class="text-lg font-semibold text-slate-200 p-4">
-            Nathan Petersen
-          </p>
-          <p class="text-sm text-slate-500 group-hover:text-slate-300">
-            DevOps, SWE, Cloud
-          </p>
+          <div class="p-4">
+            <p class="text-lg font-semibold text-slate-200">Nathan Petersen</p>
+            <p class="text-sm text-slate-500 group-hover:text-slate-300">
+              DevOps, SRE, Cloud, SWE
+            </p>
+          </div>
         </a>
-        <ul>
-          <li>
-            <a class="text-white hover:text-blue-400" href="https://gitlab.com/n8petersen"
-              >GitLab Profile</a
-            >
-          </li>
-          <li>
-            <a class="text-white hover:text-blue-400" href="https://vue.n8pete.com">Vue Site</a>
-          </li>
-          <li>
-            <a class="text-white hover:text-blue-400" href="https://helpukraine.n8pete.com"
-              >Ukraine Help List</a
-            >
-          </li>
-        </ul>
+
+        <div class="w-full md:block md:w-auto mr-5 p-2">
+          <ul class="flex flex-col font-medium lg:text-lg md:space-x-8 md:flex-row md:mt-0 md:border-0 md:bg-transparent">
+            <li>
+              <a
+                class="text-white hover:text-blue-400 block py-2 px-3 md:p-0 rounded md:bg-transparent right-1"
+                href="https://gitlab.com/n8petersen" target=blank
+                >GitLab Profile</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-white hover:text-blue-400  block py-2 px-3 md:p-0 rounded md:bg-transparent right-1"
+                href="https://vue.n8pete.com" target=blank
+                >Vue Site</a
+              >
+            </li>
+  
+            <li>
+              <a
+                class="text-white hover:text-blue-400 block py-2 px-3 md:p-0 rounded md:bg-transparent right-1"
+                href="https://helpukraine.n8pete.com" target=blank
+                >Ukraine Help List</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
 
-    <div class="p-4">
-      <h1 class="text-3xl font-bold text-emerald-300">Hello World!</h1>
+    <div class="p-4 grid gap-4 place-items-center place-self-center">
+      <h1 class="text-6xl font-bold text-emerald-300">Hello World!</h1>
 
-      <p class="text-emerald-100">
+      <p class="text-emerald-100 text-2xl">
         This is the landing page for my website, future home to my personal
         portfolio.
       </p>
-      <p class="text-emerald-100">
-        This page is the version of my website using plain HTML, with no
-        frameworks.
+
+      <p class="text-emerald-100 text-lg">
+        This page is the version of my website using plain HTML + Tailwind CSS, with no
+        JS framework.
       </p>
-      <p class="text-emerald-100">Projects can be found on the navbar above.</p>
-      <p class="text-emerald-400">
-        You can reach me by email at: <u>contact@n8pete.com</u>
+      <p class="text-emerald-400 text-lg">
+        You can reach me by email at: <a href="mailto:contact@n8pete.com" class="hover:text-emerald-200 underline underline-offset-2">contact@n8pete.com</a>
       </p>
     </div>
+    
   </body>
 </html>
