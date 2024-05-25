@@ -6,6 +6,7 @@
     <link href="./output.css" rel="stylesheet" />
     <title>Nathan Petersen</title>
   </head>
+
   <body class="bg-slate-600 dark:bg-slate:700">
     <nav
       class="border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800"
@@ -13,7 +14,7 @@
       <div class="flex items-center flex-wrap justify-between">
         <a href="#" class="group flex items-center ml-5 p-2">
           <img
-            class="h-10 lg:h-16 md:h-12 rounded-full outline-dotted outline-offset-2 outline-emerald-400"
+            class="h-14 lg:h-16 md:h-16 rounded-full outline-dotted outline-offset-2 outline-emerald-400"
             src="./img/nathan-profile.jpg"
             alt="Nathan Petersen Profile Picture"
           />
@@ -27,11 +28,11 @@
 
         <div class="w-full md:block md:w-auto mr-5 p-2">
           <ul
-            class="flex flex-col font-medium lg:text-lg md:space-x-8 md:flex-row md:mt-0 md:border-0 md:bg-transparent"
+            class="flex flex-col font-medium lg:text-lg md:space-x-8 md:flex-row"
           >
             <li>
               <a
-                class="text-white hover:text-blue-400 block py-2 px-3 md:p-0 rounded md:bg-transparent right-1"
+                class="text-white hover:text-blue-400 block py-2 px-3 md:p-0"
                 href="https://gitlab.com/n8petersen"
                 target="blank"
                 >GitLab</a
@@ -39,7 +40,7 @@
             </li>
             <li>
               <a
-                class="text-white hover:text-blue-400 block py-2 px-3 md:p-0 rounded md:bg-transparent right-1"
+                class="text-white hover:text-blue-400 block py-2 px-3 md:p-0"
                 href="https://github.com/n8petersen"
                 target="blank"
                 >GitHub</a
@@ -47,30 +48,62 @@
             </li>
             <li>
               <a
-                class="text-white hover:text-blue-400 block py-2 px-3 md:p-0 rounded md:bg-transparent right-1"
+                class="text-white hover:text-blue-400 block py-2 px-3 md:p-0"
                 href="https://www.linkedin.com/in/n8petersen/"
                 target="blank"
                 >LinkedIn</a
               >
             </li>
             <li>
-              <a
-                class="text-white hover:text-blue-400 block py-2 px-3 md:p-0 rounded md:bg-transparent right-1"
-                href="https://vue.n8pete.com"
-                target="blank"
-                >Vue Site</a
+              <button
+                type="button"
+                data-collapse-toggle="mega-menu-full-dropdown"
+                class="group flex items-center hover:text-blue-400 text-white py-2 px-3 md:p-0"
+                onclick="document.getElementById('menu-dropdown').hidden = document.getElementById('menu-dropdown').hidden ? false : true;"
               >
+                Projects
+                <svg
+                  class="w-2.5 h-2.5 ms-1.5 stroke-current stroke-2"
+                  viewBox="0 0 10 3"
+                >
+                  <path stroke-linecap="round" d="m1 1 4 4 4-4" />
+                </svg>
+              </button>
             </li>
 
-            <li>
+
+            <!-- <li>
               <a
                 class="text-white hover:text-blue-400 block py-2 px-3 md:p-0 rounded md:bg-transparent right-1"
                 href="https://helpukraine.n8pete.com"
                 target="blank"
                 >Ukraine Site</a
               >
-            </li>
+            </li>  -->
           </ul>
+        </div>
+      </div>
+      <div hidden
+        id="menu-dropdown"
+        class="mt-1 border-y bg-gray-800 border-gray-600"
+      >
+        <div
+          class="grid max-w-screen-xl px-4 py-5 mx-auto text-gray-900 dark:text-white sm:grid-cols-2 md:px-6"
+        >
+          <a href="https://vue.n8pete.com" target="_blank" rel="noopener noreferrer" class="block p-3 rounded-lg hover:bg-gray-700">
+            <div class="font-semibold">Vue Site</div>
+            <span class="text-sm text-gray-400"
+              >Under Construction - Vue version of site</span
+            >
+          </a>
+
+          <a href="https://helpukraine.n8pete.com" target="_blank" rel="noopener noreferrer" class="block p-3 rounded-lg hover:bg-gray-700">
+            <div class="font-semibold">Ukraine Site</div>
+            <span class="text-sm text-gray-400"
+              >Currated list of simple ways to help ukraine</span
+            >
+          </a>
+
         </div>
       </div>
     </nav>
