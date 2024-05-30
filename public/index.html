@@ -12,15 +12,15 @@
     <nav
       class="border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800"
     >
-      <div class="flex items-center flex-wrap justify-between">
-        <a href="#" class="group flex items-center ml-5 p-2">
+      <div class="flex items-center flex-wrap justify-between ">
+        <a href="#" class="group flex items-center ml-5 p-2 rounded-[25px] hover:bg-gray-700">
           <img
             class="h-14 lg:h-16 md:h-16 rounded-full outline-dotted outline-offset-2 outline-emerald-400"
             src="./img/nathan-profile.jpg"
             alt="Nathan Petersen Profile Picture"
           />
           <div class="p-4">
-            <p class="text-lg font-semibold text-slate-200">Nathan Petersen</p>
+            <p class="text-lg font-semibold text-slate-200 group-hover:text-emerald-300">Nathan Petersen</p>
             <p class="text-sm text-slate-500 group-hover:text-slate-300">
               DevOps, SRE, Cloud, SWE
             </p>
@@ -29,11 +29,11 @@
 
         <div class="w-full md:block md:w-auto mr-5 p-2">
           <ul
-            class="flex flex-col font-medium lg:text-lg md:space-x-8 md:flex-row"
+            class="flex flex-col font-medium lg:text-lg md:space-x-4 md:flex-row"
           >
-            <li>
+            <li class="">
               <a
-                class="text-white hover:text-blue-400 block py-2 px-3 md:p-0"
+                class="text-white hover:text-blue-400 block py-2 px-3 w-full rounded-lg hover:bg-gray-700"
                 href="https://gitlab.com/n8petersen"
                 target="blank"
                 >GitLab</a
@@ -41,7 +41,7 @@
             </li>
             <li>
               <a
-                class="text-white hover:text-blue-400 block py-2 px-3 md:p-0"
+                class="text-white hover:text-blue-400 block py-2 px-3 w-full rounded-lg hover:bg-gray-700"
                 href="https://github.com/n8petersen"
                 target="blank"
                 >GitHub</a
@@ -49,17 +49,16 @@
             </li>
             <li>
               <a
-                class="text-white hover:text-blue-400 block py-2 px-3 md:p-0"
+                class="text-white hover:text-blue-400 block py-2 px-3 w-full rounded-lg hover:bg-gray-700"
                 href="https://www.linkedin.com/in/n8petersen/"
                 target="blank"
                 >LinkedIn</a
               >
             </li>
-            <li>
+            <li class="group">
               <button
                 type="button"
-                data-collapse-toggle="mega-menu-full-dropdown"
-                class="group flex items-center hover:text-blue-400 text-white py-2 px-3 md:p-0"
+                class="flex items-center hover:text-blue-400 text-white py-2 px-3 w-full rounded-lg hover:bg-gray-700"
                 onclick="document.getElementById('menu-dropdown').hidden = document.getElementById('menu-dropdown').hidden ? false : true;"
               >
                 Projects
@@ -80,16 +79,16 @@
         class="mt-1 border-y bg-gray-800 border-gray-600"
       >
         <div
-          class="grid max-w-screen-xl px-4 py-5 mx-auto text-gray-900 dark:text-white sm:grid-cols-2 md:px-6"
+          class="grid max-w-screen-xl px-4 py-5 mx-auto text-white sm:grid-cols-2 md:px-6"
         >
           <a
             href="https://vue.n8pete.com"
             target="_blank"
             rel="noopener noreferrer"
-            class="block p-3 rounded-lg hover:bg-gray-700"
+            class="hover:text-blue-400 text-white block group p-3 rounded-lg hover:bg-gray-700"
           >
             <div class="font-semibold">Vue Site</div>
-            <span class="text-sm text-gray-400"
+            <span class="text-sm text-slate-500 group-hover:text-slate-300"
               >Under Construction - Vue version of site</span
             >
           </a>
@@ -98,10 +97,10 @@
             href="https://helpukraine.n8pete.com"
             target="_blank"
             rel="noopener noreferrer"
-            class="block p-3 rounded-lg hover:bg-gray-700"
+            class="hover:text-blue-400 text-white block group p-3 rounded-lg hover:bg-gray-700"
           >
             <div class="font-semibold">Ukraine Site</div>
-            <span class="text-sm text-gray-400"
+            <span class="text-sm text-slate-500 group-hover:text-slate-300"
               >Currated list of simple ways to help ukraine</span
             >
           </a>
