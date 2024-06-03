@@ -12,22 +12,15 @@
     <nav
       class="border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800"
     >
-      <div class="flex items-center flex-wrap justify-between">
-        <a
-          href="#"
-          class="group flex items-center ml-5 p-2 rounded-[25px] hover:bg-gray-700"
-        >
+      <div class="flex items-center flex-wrap justify-between ">
+        <a href="#" class="group flex items-center ml-5 p-2 rounded-[25px] hover:bg-gray-700">
           <img
             class="h-14 lg:h-16 md:h-16 rounded-full outline-dotted outline-offset-2 outline-emerald-400"
             src="./img/nathan-profile.jpg"
             alt="Nathan Petersen Profile Picture"
           />
           <div class="p-4">
-            <p
-              class="text-lg font-semibold text-slate-200 group-hover:text-emerald-300"
-            >
-              Nathan Petersen
-            </p>
+            <p class="text-lg font-semibold text-slate-200 group-hover:text-emerald-300">Nathan Petersen</p>
             <p class="text-sm text-slate-500 group-hover:text-slate-300">
               DevOps, SRE, Cloud, SWE
             </p>
@@ -66,22 +59,7 @@
               <button
                 type="button"
                 class="flex items-center hover:text-blue-400 text-white py-2 px-3 w-full rounded-lg hover:bg-gray-700"
-                onclick="toggleDropdown('resume-dropdown')"
-              >
-                Skills+Resume
-                <svg
-                  class="w-2.5 h-2.5 ms-1.5 stroke-current stroke-2"
-                  viewBox="0 0 10 3"
-                >
-                  <path stroke-linecap="round" d="m1 1 4 4 4-4" />
-                </svg>
-              </button>
-            </li>
-            <li class="group">
-              <button
-                type="button"
-                class="flex items-center hover:text-blue-400 text-white py-2 px-3 w-full rounded-lg hover:bg-gray-700"
-                onclick="toggleDropdown('project-dropdown')"
+                onclick="document.getElementById('menu-dropdown').hidden = document.getElementById('menu-dropdown').hidden ? false : true;"
               >
                 Projects
                 <svg
@@ -95,44 +73,10 @@
           </ul>
         </div>
       </div>
-
       <div
         hidden
-        id="resume-dropdown"
-        class="dropdowns mt-1 border-y bg-gray-800 border-gray-600"
-      >
-        <div
-          class="grid max-w-screen-xl px-4 py-5 mx-auto text-white sm:grid-cols-2 md:px-6"
-        >
-          <a
-            href="./resume.html"
-            rel="noopener noreferrer"
-            class="hover:text-blue-400 text-white block group p-3 m-3 rounded-lg hover:bg-gray-700"
-          >
-            <div class="font-semibold">Resume</div>
-            <span class="text-sm text-slate-500 group-hover:text-slate-300"
-              >View my online resume, or download a PDF</span
-            >
-          </a>
-
-          <a
-            href="./skills.html"
-            rel="noopener noreferrer"
-            class="hover:text-blue-400 text-white block group p-3 m-3 rounded-lg hover:bg-gray-700"
-          >
-            <div class="font-semibold">Skills List</div>
-            <span class="text-sm text-slate-500 group-hover:text-slate-300"
-              >Summary of all my tech-related skills, broken down by
-              category.</span
-            >
-          </a>
-        </div>
-      </div>
-
-      <div
-        hidden
-        id="project-dropdown"
-        class=" dropdowns mt-1 border-y bg-gray-800 border-gray-600"
+        id="menu-dropdown"
+        class="mt-1 border-y bg-gray-800 border-gray-600"
       >
         <div
           class="grid max-w-screen-xl px-4 py-5 mx-auto text-white sm:grid-cols-2 md:px-6"
@@ -141,7 +85,7 @@
             href="https://vue.n8pete.com"
             target="_blank"
             rel="noopener noreferrer"
-            class="hover:text-blue-400 text-white block group p-3 m-3 rounded-lg hover:bg-gray-700"
+            class="hover:text-blue-400 text-white block group p-3 rounded-lg hover:bg-gray-700"
           >
             <div class="font-semibold">Vue Site</div>
             <span class="text-sm text-slate-500 group-hover:text-slate-300"
@@ -153,7 +97,7 @@
             href="https://helpukraine.n8pete.com"
             target="_blank"
             rel="noopener noreferrer"
-            class="hover:text-blue-400 text-white block group p-3 m-3 rounded-lg hover:bg-gray-700"
+            class="hover:text-blue-400 text-white block group p-3 rounded-lg hover:bg-gray-700"
           >
             <div class="font-semibold">Ukraine Site</div>
             <span class="text-sm text-slate-500 group-hover:text-slate-300"
@@ -185,7 +129,5 @@
         >
       </p>
     </div>
-
-    <script src="dropdown.js"></script>
   </body>
 </html>
