@@ -9,35 +9,22 @@
   </head>
 
   <body class="bg-slate-600 dark:bg-slate:700">
-    <nav
-      class="border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800"
-    >
+    <nav class="border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800">
       <div class="flex items-center flex-wrap justify-between">
-        <a
-          href="./index.html"
-          class="group flex items-center ml-5 p-2 rounded-[25px] hover:bg-gray-700"
-        >
+        <a href="./index.html" class="group flex items-center ml-5 p-2 rounded-[25px] hover:bg-gray-700" >
           <img
             class="h-14 lg:h-16 md:h-16 rounded-full outline-dotted outline-offset-2 outline-emerald-400"
             src="./img/nathan-profile.jpg"
             alt="Nathan Petersen Profile Picture"
           />
           <div class="p-4">
-            <p
-              class="text-lg font-semibold text-slate-200 group-hover:text-emerald-300"
-            >
-              Nathan Petersen
-            </p>
-            <p class="text-sm text-slate-500 group-hover:text-slate-300">
-              DevOps, SRE, Cloud, SWE
-            </p>
+            <p class="text-lg font-semibold text-slate-200 group-hover:text-emerald-300">Nathan Petersen</p>
+            <p class="text-sm text-slate-500 group-hover:text-slate-300">DevOps, SRE, Cloud, SWE</p>
           </div>
         </a>
 
         <div class="w-full md:block md:w-auto mr-5 p-2">
-          <ul
-            class="flex flex-col font-medium lg:text-lg md:space-x-4 md:flex-row"
-          >
+          <ul class="flex flex-col font-medium lg:text-lg md:space-x-4 md:flex-row">
             <li class="">
               <a
                 class="text-white hover:text-blue-400 block py-2 px-3 w-full rounded-lg hover:bg-gray-700"
@@ -69,10 +56,7 @@
                 onclick="toggleDropdown('resume-dropdown')"
               >
                 Skills+Resume
-                <svg
-                  class="w-2.5 h-2.5 ms-1.5 stroke-current stroke-2"
-                  viewBox="0 0 10 3"
-                >
+                <svg class="w-2.5 h-2.5 ms-1.5 stroke-current stroke-2" viewBox="0 0 10 3">
                   <path stroke-linecap="round" d="m1 1 4 4 4-4" />
                 </svg>
               </button>
@@ -84,10 +68,7 @@
                 onclick="toggleDropdown('project-dropdown')"
               >
                 Projects
-                <svg
-                  class="w-2.5 h-2.5 ms-1.5 stroke-current stroke-2"
-                  viewBox="0 0 10 3"
-                >
+                <svg class="w-2.5 h-2.5 ms-1.5 stroke-current stroke-2" viewBox="0 0 10 3">
                   <path stroke-linecap="round" d="m1 1 4 4 4-4" />
                 </svg>
               </button>
@@ -96,23 +77,17 @@
         </div>
       </div>
 
-      <div
-        hidden
-        id="resume-dropdown"
-        class="dropdowns mt-1 border-y bg-gray-800 border-gray-600"
-      >
-        <div
-          class="grid max-w-screen-xl px-4 py-5 mx-auto text-white sm:grid-cols-2 md:px-6"
-        >
+      <div hidden id="resume-dropdown" class="dropdowns mt-1 border-y bg-gray-800 border-gray-600">
+        <div class="grid max-w-screen-xl px-4 py-5 mx-auto text-white sm:grid-cols-2 md:px-6">
           <a
             href="./resume.html"
             rel="noopener noreferrer"
             class="hover:text-blue-400 text-white block group p-3 m-3 rounded-lg hover:bg-gray-700"
           >
             <div class="font-semibold">Resume</div>
-            <span class="text-sm text-slate-500 group-hover:text-slate-300"
-              >View my online resume, or download a PDF</span
-            >
+            <span class="text-sm text-slate-500 group-hover:text-slate-300">
+              View my online resume, or download a PDF
+            </span>
           </a>
 
           <a
@@ -121,10 +96,10 @@
             class="text-blue-400 block group p-3 m-3 rounded-lg bg-gray-700"
           >
             <div class="font-semibold">Skills List</div>
-            <span class="text-sm text-slate-300"
-              >Summary of all my tech-related skills, broken down by
-              category.</span
-            >
+            <span class="text-sm text-slate-300">
+              Summary of all my tech-related skills, broken down by
+              category.
+            </span>
           </a>
         </div>
       </div>
@@ -134,9 +109,7 @@
         id="project-dropdown"
         class="dropdowns mt-1 border-y bg-gray-800 border-gray-600"
       >
-        <div
-          class="grid max-w-screen-xl px-4 py-5 mx-auto text-white sm:grid-cols-2 md:px-6"
-        >
+        <div class="grid max-w-screen-xl px-4 py-5 mx-auto text-white sm:grid-cols-2 md:px-6">
           <a
             href="https://vue.n8pete.com"
             target="_blank"
@@ -144,9 +117,9 @@
             class="hover:text-blue-400 text-white block group p-3 m-3 rounded-lg hover:bg-gray-700"
           >
             <div class="font-semibold">Vue Site</div>
-            <span class="text-sm text-slate-500 group-hover:text-slate-300"
-              >Under Construction - Vue version of site</span
-            >
+            <span class="text-sm text-slate-500 group-hover:text-slate-300">
+              Under Construction - Vue version of site
+            </span>
           </a>
 
           <a
@@ -156,123 +129,184 @@
             class="hover:text-blue-400 text-white block group p-3 m-3 rounded-lg hover:bg-gray-700"
           >
             <div class="font-semibold">Ukraine Site</div>
-            <span class="text-sm text-slate-500 group-hover:text-slate-300"
-              >Currated list of simple ways to help Ukraine</span
-            >
+            <span class="text-sm text-slate-500 group-hover:text-slate-300">
+              Currated list of simple ways to help Ukraine
+            </span>
           </a>
         </div>
       </div>
     </nav>
 
-    <div class="p-4 grid gap-4 place-items-center place-self-center">
-      <h1 class="text-6xl font-bold text-emerald-300">Skills</h1>
+    <h1 class="md:text-5xl text-4xl font-bold text-emerald-300 text-center pt-4">Skills</h1>
+    <p class="text-emerald-100 text-xl md:text-2xl text-center">This is a summary of all my tech-related skills, broken down by category.</p>
 
-      <p class="text-emerald-100 text-2xl">
-        This is a summary of all my tech-related skills, broken down by
-        category.
-      </p>
-
-      <div class="bg-slate-700 rounded-md shadow-xl p-5 m-5 min-h-[340px]">
-        <h1 class="text-4xl font-bold text-emerald-400">⭐ <u>Top 10 Skills</u> ⭐</h1>
-        <ol class="list-decimal pl-12 p-2 text-start">
-          <li class="text-emerald-100 hover:text-blue-400 hover:font-bold hover:text-lg">Automation (Scripting)</li>
-          <li class="text-emerald-100 hover:text-blue-400 hover:font-bold hover:text-lg">Systems Engineering (DevOps)</li>
-          <li class="text-emerald-100 hover:text-blue-400 hover:font-bold hover:text-lg">Git</li>
-          <li class="text-emerald-100 hover:text-blue-400 hover:font-bold hover:text-lg">AWS</li>
-          <li class="text-emerald-100 hover:text-blue-400 hover:font-bold hover:text-lg">Container Orchestration</li>
-          <li class="text-emerald-100 hover:text-blue-400 hover:font-bold hover:text-lg">OS Virtualization</li>
-          <li class="text-emerald-100 hover:text-blue-400 hover:font-bold hover:text-lg">Database Administration</li>
-          <li class="text-emerald-100 hover:text-blue-400 hover:font-bold hover:text-lg">Computer Networking</li>
-          <li class="text-emerald-100 hover:text-blue-400 hover:font-bold hover:text-lg">CI/CD</li>
-          <li class="text-emerald-100 hover:text-blue-400 hover:font-bold hover:text-lg">System + Software Deployment</li>
-        </ol>
+    <div class="p-4 grid gap-4 place-items-center place-self-center text-center *:md:w-1/3 *:w-10/12">
+      <div id="categories" class="md:hidden bg-slate-700 text-emerald-300 rounded-md shadow-xl p-5 m-5">
+        <h1 class="text-2xl underline font-bold text-blue-400">Categories</h1>
+        <p class="hover:text-emerald-600 hover:underline"><a href="#topten">Top 10 Skills</a></p>
+        <p class="hover:text-emerald-600 hover:underline"><a href="#certificates">Certificates</a></p>
+        <p class="hover:text-emerald-600 hover:underline"><a href="#languages">Languages</a></p>
+        <p class="hover:text-emerald-600 hover:underline"><a href="#scripting_automation">Scripting + Automation</a></p>
+        <p class="hover:text-emerald-600 hover:underline"><a href="#environments">Environments</a></p>
+        <p class="hover:text-emerald-600 hover:underline"><a href="#databases">Databases</a></p>
+        <p class="hover:text-emerald-600 hover:underline"><a href="#networking">Networking</a></p>
+        <p class="hover:text-emerald-600 hover:underline"><a href="#security">Security</a></p>
+        <p class="hover:text-emerald-600 hover:underline"><a href="#embeddedsystems">Embedded Systems</a></p>
+        <p class="hover:text-emerald-600 hover:underline"><a href="#backenddevelopment">Backend Development</a></p>
+        <p class="hover:text-emerald-600 hover:underline"><a href="#webdevelopment">Web Development</a></p>
+        <p class="hover:text-emerald-600 hover:underline"><a href="#logging_monitoring">Logging + Monitoring</a></p>
+        <p class="hover:text-emerald-600 hover:underline"><a href="#deployment_orchestration">Deployment + Orchestration</a></p>
       </div>
 
-      <div class="bg-slate-700 rounded-md shadow-xl p-5 m-5 min-h-[265px]">
-        <h1 class="text-3xl font-bold text-emerald-300">Certificates</h1>
-        <ol class="list-disc pl-12 p-2 text-start">
-        </ol>
+      <div id="topten" class="bg-slate-700 text-emerald-100 rounded-md shadow-xl p-5 m-5">
+        <h1 class="text-2xl md:text-3xl font-bold text-emerald-400">⭐<u>Top 10 Skills</u>⭐</h1>
+        <p class="hover:text-blue-400">Automation (Scripting)</p>
+        <p class="hover:text-blue-400">DevOps</p>
+        <p class="hover:text-blue-400">Systems Engineering</p>
+        <p class="hover:text-blue-400">Git</p>
+        <p class="hover:text-blue-400">AWS</p>
+        <p class="hover:text-blue-400">Container Orchestration</p>
+        <p class="hover:text-blue-400">OS Virtualization</p>
+        <p class="hover:text-blue-400">Database Administration</p>
+        <p class="hover:text-blue-400">Computer Networking</p>
+        <p class="hover:text-blue-400">System & Software Deployment</p>
+      </div>
+    </div>
+
+
+    <div class="
+      grid md:grid-cols-2 2xl:grid-cols-3 gap-4 
+      place-items-center place-self-center 
+      text-center p-4 text-emerald-100
+      *:w-10/12 md:*:h-[95%] *:bg-slate-700
+      *:rounded-md *:shadow-xl *:p-5 *:m-5">
+      <div id="certificates">
+        <h1 class="text-2xl md:text-3xl font-bold text-emerald-300">Certificates</h1>
+        <p class="hover:text-blue-400">AWS Certified Solutions Architect - Associate (2024)</p>
+        <p class="hover:text-blue-400">CompTIA A+ (2024)</p>
       </div>
 
-      <div class="bg-slate-700 rounded-md shadow-xl p-5 m-5 min-h-[265px]">
-        <h1 class="text-3xl font-bold text-emerald-300">Scripting + Automation</h1>
-        <ol class="list-disc pl-12 p-2 text-start">
-            <li class="text-emerald-100 hover:text-blue-400 hover:font-bold hover:text-lg">PowerShell</li>
-            <li class="text-emerald-100 hover:text-blue-400 hover:font-bold hover:text-lg">Bash</li>
-            <li class="text-emerald-100 hover:text-blue-400 hover:font-bold hover:text-lg">Python</li>
-            <li class="text-emerald-100 hover:text-blue-400 hover:font-bold hover:text-lg">Go</li>
-            <li class="text-emerald-100 hover:text-blue-400 hover:font-bold hover:text-lg">Octopus Deploy</li>
-            <li class="text-emerald-100 hover:text-blue-400 hover:font-bold hover:text-lg">Azure DevOps Pipelines</li>
-            <li class="text-emerald-100 hover:text-blue-400 hover:font-bold hover:text-lg">GitLab CI/CD</li>
-        </ol>
+      <div id="languages">
+        <h1 class="text-2xl md:text-3xl font-bold text-emerald-300">Languages</h1>
+        <p class="hover:text-blue-400">Ukrainian</p>
+        <p class="hover:text-blue-400">Russian (ACTFL Advanced) (Minor)</p>
       </div>
 
-      <div class="bg-slate-700 rounded-md shadow-xl p-5 m-5 min-h-[265px]">
-        <h1 class="text-3xl font-bold text-emerald-300">Environments</h1>
-        <ol class="list-disc pl-12 p-2 text-start">
-            <li class="text-emerald-100 hover:text-blue-400 hover:font-bold hover:text-lg">AWS</li>
-            <li class="text-emerald-100 hover:text-blue-400 hover:font-bold hover:text-lg">Git</li>
-            <li class="text-emerald-100 hover:text-blue-400 hover:font-bold hover:text-lg">Azure DevOps</li>
-            <li class="text-emerald-100 hover:text-blue-400 hover:font-bold hover:text-lg">GitLab</li>
-            <li class="text-emerald-100 hover:text-blue-400 hover:font-bold hover:text-lg">GitHub </li>
-            <li class="text-emerald-100 hover:text-blue-400 hover:font-bold hover:text-lg">Docker</li>
-            <li class="text-emerald-100 hover:text-blue-400 hover:font-bold hover:text-lg">Kubernetes</li>
-            <li class="text-emerald-100 hover:text-blue-400 hover:font-bold hover:text-lg">Windows</li>
-            <li class="text-emerald-100 hover:text-blue-400 hover:font-bold hover:text-lg">Linux</li>
-            <li class="text-emerald-100 hover:text-blue-400 hover:font-bold hover:text-lg">VMWare</li>
-            <li class="text-emerald-100 hover:text-blue-400 hover:font-bold hover:text-lg">Proxmox</li>
-        </ol>
+      <div id="scripting_automation">
+        <h1 class="text-2xl md:text-3xl font-bold text-emerald-300">Scripting + Automation</h1>
+        <p class="hover:text-blue-400">PowerShell</p>
+        <p class="hover:text-blue-400">Bash</p>
+        <p class="hover:text-blue-400">Python</p>
+        <p class="hover:text-blue-400">Go</p>
+        <p class="hover:text-blue-400">Octopus Deploy</p>
+        <p class="hover:text-blue-400">Azure DevOps Pipelines</p>
+        <p class="hover:text-blue-400">GitLab CI/CD</p>
       </div>
 
-      <div class="bg-slate-700 rounded-md shadow-xl p-5 m-5 min-h-[265px]">
-        <h1 class="text-3xl font-bold text-emerald-300">Databases</h1>
-        <ol class="list-disc pl-12 p-2 text-start">
-        </ol>
+      <div id="environments">
+        <h1 class="text-2xl md:text-3xl font-bold text-emerald-300">Environments</h1>
+        <p class="hover:text-blue-400">AWS</p>
+        <p class="hover:text-blue-400">Git</p>
+        <p class="hover:text-blue-400">Azure DevOps</p>
+        <p class="hover:text-blue-400">GitLab</p>
+        <p class="hover:text-blue-400">GitHub</p>
+        <p class="hover:text-blue-400">Docker</p>
+        <p class="hover:text-blue-400">Kubernetes</p>
+        <p class="hover:text-blue-400">Windows</p>
+        <p class="hover:text-blue-400">Linux</p>
+        <p class="hover:text-blue-400">VMWare</p>
+        <p class="hover:text-blue-400">Proxmox</p>
       </div>
 
-      <div class="bg-slate-700 rounded-md shadow-xl p-5 m-5 min-h-[265px]">
-        <h1 class="text-3xl font-bold text-emerald-300">Networking</h1>
-        <ol class="list-disc pl-12 p-2 text-start">
-        </ol>
+      <div id="databases">
+        <h1 class="text-2xl md:text-3xl font-bold text-emerald-300">Databases</h1>
+        <p class="hover:text-blue-400">MongoDB</p>
+        <p class="hover:text-blue-400">MSSQL</p>
+        <p class="hover:text-blue-400">MySQL</p>
+        <p class="hover:text-blue-400">Postgres</p>
+        <p class="hover:text-blue-400">AWS-DynamoDB</p>
+        <p class="hover:text-blue-400">AWS-RDS</p>
+        <p class="hover:text-blue-400">AWS-Aurora</p>
       </div>
 
-      <div class="bg-slate-700 rounded-md shadow-xl p-5 m-5 min-h-[265px]">
-        <h1 class="text-3xl font-bold text-emerald-300">Security</h1>
-        <ol class="list-disc pl-12 p-2 text-start">
-        </ol>
+      <div id="networking">
+        <h1 class="text-2xl md:text-3xl font-bold text-emerald-300">Networking</h1>
+        <p class="hover:text-blue-400">Cisco</p>
+        <p class="hover:text-blue-400">VLANs</p>
+        <p class="hover:text-blue-400">Subnetting</p>
+        <p class="hover:text-blue-400">OSPF</p>
+        <p class="hover:text-blue-400">STP</p>
+        <p class="hover:text-blue-400">Static and Dynamic Routing</p>
+        <p class="hover:text-blue-400">TCP/IP Model</p>
+        <p class="hover:text-blue-400">OSI Model</p>
+        <p class="hover:text-blue-400">GNS3</p>
+        <p class="hover:text-blue-400">Load Balancing</p>
       </div>
 
-      <div class="bg-slate-700 rounded-md shadow-xl p-5 m-5 min-h-[265px]">
-        <h1 class="text-3xl font-bold text-emerald-300">Embedded Systems</h1>
-        <ol class="list-disc pl-12 p-2 text-start">
-        </ol>
+      <div id="security">
+        <h1 class="text-2xl md:text-3xl font-bold text-emerald-300">Security</h1>
+        <p class="hover:text-blue-400">pfSense</p>
+        <p class="hover:text-blue-400">Snort</p>
+        <p class="hover:text-blue-400">Wireshark</p>
+        <p class="hover:text-blue-400">Npcap</p>
+        <p class="hover:text-blue-400">Metasploit</p>
+        <p class="hover:text-blue-400">Active Directory</p>
+        <p class="hover:text-blue-400">OpenVPN</p>
+        <p class="hover:text-blue-400">AWS-IAM</p>
+        <p class="hover:text-blue-400">AWS-VPC</p>
       </div>
 
-      <div class="bg-slate-700 rounded-md shadow-xl p-5 m-5 min-h-[265px]">
-        <h1 class="text-3xl font-bold text-emerald-300">Backend Development</h1>
-        <ol class="list-disc pl-12 p-2 text-start">
-        </ol>
+      <div id="embeddedsystems">
+        <h1 class="text-2xl md:text-3xl font-bold text-emerald-300">Embedded Systems</h1>
+        <p class="hover:text-blue-400">Arduino</p>
+        <p class="hover:text-blue-400">RaspberryPi</p>
+        <p class="hover:text-blue-400">I2C</p>
+        <p class="hover:text-blue-400">SPI</p>
+        <p class="hover:text-blue-400">LoRa</p>
       </div>
 
-      <div class="bg-slate-700 rounded-md shadow-xl p-5 m-5 min-h-[265px]">
-        <h1 class="text-3xl font-bold text-emerald-300">Web Development</h1>
-        <ol class="list-disc pl-12 p-2 text-start">
-        </ol>
+      <div id="backenddevelopment">
+        <h1 class="text-2xl md:text-3xl font-bold text-emerald-300">Backend Development</h1>
+        <p class="hover:text-blue-400">Node.js</p>
+        <p class="hover:text-blue-400">Python</p>
+        <p class="hover:text-blue-400">C#</p>
+        <p class="hover:text-blue-400">C++</p>
+        <p class="hover:text-blue-400">Java</p>
+        <p class="hover:text-blue-400">Rust</p>
       </div>
 
-      <div class="bg-slate-700 rounded-md shadow-xl p-5 m-5 min-h-[265px]">
-        <h1 class="text-3xl font-bold text-emerald-300">Logging and Monitoring</h1>
-        <ol class="list-disc pl-12 p-2 text-start">
-        </ol>
+      <div id="webdevelopment">
+        <h1 class="text-2xl md:text-3xl font-bold text-emerald-300">Web Development</h1>
+        <p class="hover:text-blue-400">HTML</p>
+        <p class="hover:text-blue-400">CSS</p>
+        <p class="hover:text-blue-400">Javascript</p>
+        <p class="hover:text-blue-400">Angular</p>
+        <p class="hover:text-blue-400">Vue</p>
+        <p class="hover:text-blue-400">React</p>
+        <p class="hover:text-blue-400">ASP.NET</p>
+        <p class="hover:text-blue-400">REST</p>
       </div>
 
-      <div class="bg-slate-700 rounded-md shadow-xl p-5 m-5 min-h-[265px]">
-        <h1 class="text-3xl font-bold text-emerald-300">Deployment + Orchestration</h1>
-        <ol class="list-disc pl-12 p-2 text-start">
-        </ol>
+      <div id="logging_monitoring">
+        <h1 class="text-2xl md:text-3xl font-bold text-emerald-300">Logging + Monitoring</h1>
+        <p class="hover:text-blue-400">Serilog</p>
+        <p class="hover:text-blue-400">New Relic</p>
+        <p class="hover:text-blue-400">Grafana</p>
+        <p class="hover:text-blue-400">Prometheus</p>
+        <p class="hover:text-blue-400">Logstash</p>
       </div>
 
-
+      <div id="deployment_orchestration">
+        <h1 class="text-2xl md:text-3xl font-bold text-emerald-300">Deployment + Orchestration</h1>
+        <p class="hover:text-blue-400">Octopus Deploy</p>
+        <p class="hover:text-blue-400">IIS</p>
+        <p class="hover:text-blue-400">FireDaemon</p>
+        <p class="hover:text-blue-400">Docker</p>
+        <p class="hover:text-blue-400">Kubernetes</p>
+        <p class="hover:text-blue-400">AWS EKS</p>
+        <p class="hover:text-blue-400">Helm</p>
+        <p class="hover:text-blue-400">Terraform</p>
+      </div>
     </div>
 
     <script src="dropdown.js"></script>
