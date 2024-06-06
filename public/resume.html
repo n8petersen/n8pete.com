@@ -169,7 +169,7 @@
 
       <div class="group ">
         <a href="../download/2024JuneResume.pdf" class="flex items-center rounded-lg shadow-lg border border-slate-700 bg-slate-700 p-2 pl-5 pr-3">
-          <p class="underline text-emerald-100 hover:text-blue-400 text-2xl">PDF Resume</p>
+          <p class="underline text-emerald-100 hover:text-blue-400 md:text-2xl">PDF Resume</p>
           <svg class="fill-emerald-100 group-hover:fill-blue-400" xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="36px">
             <path d="M480-313 287-506l43-43 120 120v-371h60v371l120-120 43 43-193 193ZM220-160q-24 0-42-18t-18-42v-143h60v143h520v-143h60v143q0 24-18 42t-42 18H220Z"/>
           </svg>
@@ -177,16 +177,16 @@
       </div>
       
 
-      <div class="text-emerald-200">
-        <table class="table-auto shadow-lg bg-slate-700 rounded-lg border border-slate-700 border-separate border-spacing-x-10 border-spacing-y-5">
+      <div id="resume" class="text-emerald-200">
+        <table class="table-auto shadow-lg bg-slate-700 rounded-lg border border-slate-700 border-separate md:border-spacing-x-10 border-spacing-y-5">
           <tbody>
             <tr>
-              <td class="text-2xl font-bold text-lime-300">Contact</td>
+              <td class="md:text-2xl font-bold text-lime-300">Contact</td>
               <td>
-                <p class="text-3xl font-bold text-emerald-400">Nathan Petersen</p>
+                <p class="md:text-3xl font-bold text-emerald-400">Nathan Petersen</p>
                 <table class="table-auto">
                   <tr>
-                    <td class="pr-10 hover:text-blue-400">Phone # available upon request</td>
+                    <td class="md:pr-10 hover:text-blue-400">Phone # available upon request</td>
                     <td><a class="hover:text-blue-400 underline underline-offset-2" href="https://gitlab.com/n8petersen" target="blank">gitlab.com/n8petersen</a></td>
                   </tr>
                   <tr>
@@ -201,7 +201,7 @@
               </td>
             </tr>
             <tr>
-              <td class="text-2xl font-bold text-lime-300">Tech Summary</td>
+              <td class="md:text-2xl font-bold text-lime-300">Tech Summary</td>
               <td>
                 <p>See full list on <a class="hover:text-blue-400 underline underline-offset-2" href="./skills.html" target="blank">skills page</a></p>
                 <p class="hover:text-blue-400"><b>Category:</b> Item</p>
@@ -209,27 +209,37 @@
               </td>
             </tr>
             <tr>
-              <td class="text-2xl font-bold text-lime-300">Experience</td>
+              <td class="md:text-2xl font-bold text-lime-300">Experience</td>
               <td>
                 <div class="group hover:text-blue-400">
-                  <p><b>GOLDPoint Systems</b> / DevOps Engineer</p>
-                  <p class="text-emerald-100 group-hover:text-blue-200 text-sm">August 2022 - PRESENT / PROVO, UT</p>
+                  <p class="md:text-lg"><b>GOLDPoint Systems</b> / DevOps Engineer</p>
+                  <p class="text-emerald-100 group-hover:text-blue-200 text-xs">August 2022 - PRESENT / PROVO, UT</p>
+                  <p><b>Technologies: </b>MongoDB, MSSQL, Azure DevOps, Octopus Deploy, Python, PowerShell, Git, Serilog, New Relic</p>
+                  <ul class="ml-8 list-disc">
+                    <li>Performed root cause analysis of production errors and resolved technical issues.</li>
+                    <li>Designed procedures for system troubleshooting and maintenance.</li>
+                    <li>Deployed code in several environments including Production for over 200 products.</li>
+                    <li>Managed 100+ servers, including 20+ SQL and 20+ MongoDB servers for internal and client use.</li>
+                    <li>Administered 200+ Git Repos for Developers and other teams in Azure DevOps.</li>
+                    <li>Wrote PowerShell and Python scripts to automate workload to decrease deployment time by over
+                      400%, and conserve server resources by up to 30%.</li>
+                  </ul>
                 </div>
               </td>
             </tr>
             <tr>
-              <td class="text-2xl font-bold text-lime-300">Education</td>
+              <td class="md:text-2xl font-bold text-lime-300">Education</td>
               <td>
                 <div class="group hover:text-blue-400">
-                  <p><b>Brigham Young University</b> / Bachelor's - Information Technology</p>
+                  <p class="md:text-lg"><b>Brigham Young University</b> / Bachelor's - Information Technology</p>
                   <p><b>Minors: </b>Computer Science, Russian</p>
                   <p>3.98 GPA, Full Tuition Academic Scholarship Recipient</p>
-                  <p class="text-emerald-100 group-hover:text-blue-200 text-sm">August 2022 - PRESENT / PROVO, UT</p>
+                  <p class="text-emerald-100 group-hover:text-blue-200 text-xs">August 2022 - PRESENT / PROVO, UT</p>
                 </div>
               </td>
             </tr>
             <tr>
-              <td class="text-2xl font-bold text-lime-300">Personal</td>
+              <td class="md:text-2xl font-bold text-lime-300">Personal</td>
               <td>
                 <div>
                   <p> Personal stuff</p>
