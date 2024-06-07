@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <title>Nathan Petersen</title>
+    <link href="./favicon.ico" rel="icon" type="image/x-icon" />
+  </head>
+
+  <body class="bg-slate-600 dark:bg-slate:700">
+    <nav
+      class="border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800"
+    >
+      <div class="flex items-center flex-wrap justify-between">
+        <a
+          href="./index.html"
+          class="group flex items-center ml-5 p-2 rounded-[25px] hover:bg-gray-700"
+        >
+          <img
+            class="h-14 lg:h-16 md:h-16 rounded-full outline-dotted outline-offset-2 outline-emerald-400"
+            src="./img/nathan-profile.jpg"
+            alt="Nathan Petersen Profile Picture"
+          />
+          <div class="p-4">
+            <p
+              class="text-lg font-semibold text-slate-200 group-hover:text-emerald-300"
+            >
+              Nathan Petersen
+            </p>
+            <p class="text-sm text-slate-500 group-hover:text-slate-300">
+              DevOps, SRE, Cloud, SWE
+            </p>
+          </div>
+        </a>
+
+        <div class="w-full md:block md:w-auto mr-5 p-2">
+          <ul
+            class="flex flex-col font-medium lg:text-lg md:space-x-4 md:flex-row"
+          >
+            <li class="">
+              <a
+                class="text-white hover:text-blue-400 block py-2 px-3 w-full rounded-lg hover:bg-gray-700"
+                href="https://gitlab.com/n8petersen"
+                target="blank"
+                >GitLab</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-white hover:text-blue-400 block py-2 px-3 w-full rounded-lg hover:bg-gray-700"
+                href="https://github.com/n8petersen"
+                target="blank"
+                >GitHub</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-white hover:text-blue-400 block py-2 px-3 w-full rounded-lg hover:bg-gray-700"
+                href="https://www.linkedin.com/in/n8petersen/"
+                target="blank"
+                >LinkedIn</a
+              >
+            </li>
+            <li class="group">
+              <button
+                type="button"
+                class="flex items-center hover:text-blue-400 text-white py-2 px-3 w-full rounded-lg hover:bg-gray-700"
+                onclick="toggleDropdown('resume-dropdown')"
+              >
+                Skills+Resume
+                <svg
+                  class="w-2.5 h-2.5 ms-1.5 stroke-current stroke-2"
+                  viewBox="0 0 10 3"
+                >
+                  <path stroke-linecap="round" d="m1 1 4 4 4-4" />
+                </svg>
+              </button>
+            </li>
+            <li class="group">
+              <button
+                type="button"
+                class="flex items-center hover:text-blue-400 text-white py-2 px-3 w-full rounded-lg hover:bg-gray-700"
+                onclick="toggleDropdown('project-dropdown')"
+              >
+                Projects
+                <svg
+                  class="w-2.5 h-2.5 ms-1.5 stroke-current stroke-2"
+                  viewBox="0 0 10 3"
+                >
+                  <path stroke-linecap="round" d="m1 1 4 4 4-4" />
+                </svg>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div
+        hidden
+        id="resume-dropdown"
+        class="dropdowns mt-1 border-y bg-gray-800 border-gray-600"
+      >
+        <div
+          class="grid max-w-screen-xl px-4 py-5 mx-auto text-white sm:grid-cols-2 md:px-6"
+        >
+          <a
+            href="#"
+            rel="noopener noreferrer"
+            class="text-blue-400 block group p-3 m-3 rounded-lg bg-gray-700"
+          >
+            <div class="font-semibold">Resume</div>
+            <span class="text-sm text-slate-300"
+              >View my online resume, or download a PDF</span
+            >
+          </a>
+
+          <a
+            href="./skills.html"
+            rel="noopener noreferrer"
+            class="hover:text-blue-400 text-white block group p-3 m-3 rounded-lg hover:bg-gray-700"
+          >
+            <div class="font-semibold">Skills List</div>
+            <span class="text-sm text-slate-500 group-hover:text-slate-300"
+              >Summary of all my tech-related skills, broken down by
+              category.</span
+            >
+          </a>
+        </div>
+      </div>
+
+      <div
+        hidden
+        id="project-dropdown"
+        class=" dropdowns mt-1 border-y bg-gray-800 border-gray-600"
+      >
+        <div
+          class="grid max-w-screen-xl px-4 py-5 mx-auto text-white sm:grid-cols-2 md:px-6"
+        >
+          <a
+            href="https://vue.n8pete.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hover:text-blue-400 text-white block group p-3 m-3 rounded-lg hover:bg-gray-700"
+          >
+            <div class="font-semibold">Vue Site</div>
+            <span class="text-sm text-slate-500 group-hover:text-slate-300"
+              >Under Construction - Vue version of site</span
+            >
+          </a>
+
+          <a
+            href="https://helpukraine.n8pete.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hover:text-blue-400 text-white block group p-3 m-3 rounded-lg hover:bg-gray-700"
+          >
+            <div class="font-semibold">Ukraine Site</div>
+            <span class="text-sm text-slate-500 group-hover:text-slate-300"
+              >Currated list of simple ways to help Ukraine</span
+            >
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="p-4 grid gap-4 place-items-center place-self-center">
+      <h1 class="text-6xl font-bold text-emerald-300">Resume</h1>
+
+      <div class="group ">
+        <a href="../download/2024JuneResume.pdf" class="flex items-center rounded-lg shadow-lg border border-slate-700 bg-slate-700 p-2 pl-5 pr-3">
+          <p class="underline text-emerald-100 hover:text-blue-400 md:text-2xl">PDF Resume</p>
+          <svg class="fill-emerald-100 group-hover:fill-blue-400" xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="36px">
+            <path d="M480-313 287-506l43-43 120 120v-371h60v371l120-120 43 43-193 193ZM220-160q-24 0-42-18t-18-42v-143h60v143h520v-143h60v143q0 24-18 42t-42 18H220Z"/>
+          </svg>
+        </a>
+      </div>
+      
+
+      <div id="resume" class="text-emerald-200">
+        <table class="table-auto shadow-lg bg-slate-700 rounded-lg border border-slate-700 border-separate md:border-spacing-x-10 border-spacing-y-5">
+          <tbody>
+            <tr>
+              <td class="md:text-2xl font-bold text-lime-300">Contact</td>
+              <td>
+                <p class="md:text-3xl font-bold text-emerald-400">Nathan Petersen</p>
+                <table class="table-auto">
+                  <tr>
+                    <td class="md:pr-10 hover:text-blue-400">Phone # available upon request</td>
+                    <td><a class="hover:text-blue-400 underline underline-offset-2" href="https://gitlab.com/n8petersen" target="blank">gitlab.com/n8petersen</a></td>
+                  </tr>
+                  <tr>
+                    <td><a class="hover:text-blue-400 underline underline-offset-2" href="mailto:contact@n8pete.com">contact@n8pete.com</a></td>
+                    <td><a class="hover:text-blue-400 underline underline-offset-2" href="https://github.com/n8petersen" target="blank">github.com/n8petersen</a></td>
+                  </tr>
+                  <tr>
+                    <td><a class="hover:text-blue-400 underline underline-offset-2" href="https://n8pete.com" target="blank">n8pete.com</a></td>
+                    <td><a class="hover:text-blue-400 underline underline-offset-2" href="https://linkedin.com/in/n8petersen/" target="blank">linkedin.com/in/n8petersen/</a></td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td class="md:text-2xl font-bold text-lime-300">Tech Summary</td>
+              <td>
+                <p>See full list on <a class="hover:text-blue-400 underline underline-offset-2" href="./skills.html" target="blank">skills page</a></p>
+                <p class="hover:text-blue-400"><b>Category:</b> Item</p>
+                <p class="hover:text-blue-400"><b>Category2:</b> Item2</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="md:text-2xl font-bold text-lime-300">Experience</td>
+              <td>
+                <div class="group hover:text-blue-400">
+                  <p class="md:text-lg"><b>GOLDPoint Systems</b> / DevOps Engineer</p>
+                  <p class="text-emerald-100 group-hover:text-blue-200 text-xs">August 2022 - PRESENT / PROVO, UT</p>
+                  <p><b>Technologies: </b>MongoDB, MSSQL, Azure DevOps, Octopus Deploy, Python, PowerShell, Git, Serilog, New Relic</p>
+                  <ul class="ml-8 list-disc">
+                    <li>Performed root cause analysis of production errors and resolved technical issues.</li>
+                    <li>Designed procedures for system troubleshooting and maintenance.</li>
+                    <li>Deployed code in several environments including Production for over 200 products.</li>
+                    <li>Managed 100+ servers, including 20+ SQL and 20+ MongoDB servers for internal and client use.</li>
+                    <li>Administered 200+ Git Repos for Developers and other teams in Azure DevOps.</li>
+                    <li>Wrote PowerShell and Python scripts to automate workload to decrease deployment time by over
+                      400%, and conserve server resources by up to 30%.</li>
+                  </ul>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="md:text-2xl font-bold text-lime-300">Education</td>
+              <td>
+                <div class="group hover:text-blue-400">
+                  <p class="md:text-lg"><b>Brigham Young University</b> / Bachelor's - Information Technology</p>
+                  <p><b>Minors: </b>Computer Science, Russian</p>
+                  <p>3.98 GPA, Full Tuition Academic Scholarship Recipient</p>
+                  <p class="text-emerald-100 group-hover:text-blue-200 text-xs">August 2022 - PRESENT / PROVO, UT</p>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="md:text-2xl font-bold text-lime-300">Personal</td>
+              <td>
+                <div>
+                  <p> Personal stuff</p>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      
+      
+    </div>
+
+    <script src="dropdown.js"></script>
+  </body>
+</html>
