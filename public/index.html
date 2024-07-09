@@ -3,16 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/ab82ad46f1.js" crossorigin="anonymous"></script>
     <link href="./build.css" rel="stylesheet" />
     <title>Nathan Petersen</title>
     <link href="./favicon.ico" rel="icon" type="image/x-icon" />
   </head>
 
-  <body class="bg-slate-600 dark:bg-slate:700">
-    <nav
-      class="border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800"
+  <body class="bg-slate-600 dark:bg-slate:700 flex flex-col h-screen">
+    <!-- Nav Bar-->
+    <div
+      class="border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 h-30"
     >
-      <div class="flex items-center flex-wrap justify-between">
+      <nav class="mx-auto w-full max-w-screen-xl flex items-center flex-wrap justify-between">
         <a
           href="#"
           class="group flex items-center ml-5 p-2 rounded-[25px] hover:bg-gray-700"
@@ -153,20 +155,29 @@
       </div>
       <!-- End Projects Dropdown-->
     </nav>
+    <!-- End Nav Bar-->
 
-    <div class="p-4 grid gap-4 place-items-center place-self-center">
-      <h1 class="text-6xl font-bold text-emerald-300">Hello World!</h1>
+    <!-- Text Body-->
+    <div class="p-4 flex flex-col justify-center items-center flex-wrap text-center h-full">
+      <h1 class="text-4xl md:text-6xl font-bold text-emerald-300">Hello World!</h1>
 
-      <p class="text-emerald-100 text-2xl">
-        This is the landing page for my website, future home to my personal
+      <p class="text-emerald-100 text-md md:text-lg py-2">
+        This is the landing page for my website, home to my personal
         portfolio.
       </p>
 
-      <p class="text-emerald-100 text-lg">
-        This page is the version of my website using plain HTML + Tailwind CSS,
-        with no JS framework.
+      <p class="text-emerald-100 text-md md:text-lg py-2">
+        Check out my Git profiles, LinkedIn, Resume, Skills, and projects I've created.
       </p>
-      <p class="text-emerald-400 text-lg">
+
+      <p class="text-emerald-100 text-md md:text-lg py-2">
+        You can also find my socials on the bottom of the page.
+      </p>
+
+      <p class="text-emerald-100 text-md md:text-lg py-2">
+        This website was created using Plain HTML + Tailwind CSS. Vue version coming soon.
+      </p>
+      <p class="text-emerald-400 text-md md:text-lg py-2">
         You can reach me by email at:
         <a
           href="mailto:contact@n8pete.com"
@@ -175,6 +186,45 @@
         >
       </p>
     </div>
+    <!-- End Text Body-->
+  
+    <!-- Footer-->
+    <footer class="static inset-x-0 bottom-0 bg-gray-900 h-30">
+      <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+        <div class="md:flex md:items-center md:justify-between text-center">
+            <p class="text-sm sm:text-center text-gray-400 select-none py-2">© 2024 Nathan Petersen. All Rights Reserved.</p>
+            <p class="text-sm sm:text-center text-gray-400 select-none group">View the repo on 
+              <a target="blank" href="https://gitlab.com/n8petersen/main-website" class="underline hover:text-white">GitLab</a>
+            </p>
+            <div class="flex mt-4 md:mt-0 justify-center md:justify-normal gap-x-3">
+                <a target="blank" href="https://gitlab.com/n8petersen" class="text-gray-500 hover:text-white">
+                  <i class="fa fa-gitlab"></i>
+                  <span class="sr-only">GitLab</span>
+                </a>
+                <a target="blank" href="https://github.com/n8petersen" class="text-gray-500 hover:text-white">
+                  <i class="fa fa-github"></i>
+                  <span class="sr-only">GitHub</span>
+                </a>
+                <a target="blank" href="https://www.linkedin.com/in/n8petersen/" class="text-gray-500 hover:text-white">
+                  <i class="fa fa-linkedin"></i>
+                  <span class="sr-only">LinkedIn</span>
+                </a>
+                <a target="blank" href="https://mastodon.social/@n8petersen" class="text-gray-500 hover:text-white">
+                  <i class="fa-brands fa-mastodon"></i>
+                  <span class="sr-only">Mastodon</span>
+                </a>
+                <a target="blank" href="mailto:contact@n8pete.com" class="text-gray-500 hover:text-white">
+                  <i class="fa fa-envelope"></i>
+                  <span class="sr-only">Mastodon</span>
+                </a>
+            </div>
+            <div class="hidden">
+              <a rel="me" href="https://mastodon.social/@n8petersen">Mastodon</a>
+            </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer-->
 
     <script src="dropdown.js"></script>
   </body>
