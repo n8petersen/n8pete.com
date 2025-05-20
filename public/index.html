@@ -1,249 +1,180 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://kit.fontawesome.com/ab82ad46f1.js" crossorigin="anonymous"></script>
-    <link href="./build.css" rel="stylesheet" />
-    <title>Nathan Petersen</title>
-    <link href="./favicon.ico" rel="icon" type="image/x-icon" />
-  </head>
 
-  <body class="bg-slate-600 dark:bg-slate:700 flex flex-col h-screen">
-    <!-- Nav Bar-->
-    <div
-      class="border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 h-30"
-    >
-      <nav class="mx-auto w-full max-w-screen-xl flex items-center flex-wrap justify-between">
-        <a
-          href="https://n8pete.com"
-          class="group flex items-center ml-5 p-2 rounded-[25px] hover:bg-gray-700"
-        >
-          <img
-            class="h-14 lg:h-16 md:h-16 rounded-full outline-dotted outline-offset-2 outline-emerald-400"
-            src="./img/nathan-profile.jpg"
-            alt="Nathan Petersen Profile Picture"
-          />
-          <div class="p-4">
-            <p
-              class="text-lg font-semibold text-slate-200 group-hover:text-emerald-300"
-            >
-              Nathan Petersen
-            </p>
-            <p class="text-sm text-slate-500 group-hover:text-slate-300">
-              DevOps, SRE, Cloud, SWE
-            </p>
-          </div>
-        </a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/ab82ad46f1.js" crossorigin="anonymous"></script>
+  <link href="./build.css" rel="stylesheet" />
+  <title>Nathan Petersen</title>
+  <link href="./favicon.ico" rel="icon" type="image/x-icon" />
+</head>
 
-        <div class="w-full md:block md:w-auto mr-5 p-2">
-          <ul
-            class="flex flex-col font-medium lg:text-lg md:space-x-4 md:flex-row"
-          >
-            <li class="">
-              <a
-                class="text-white hover:text-blue-400 block py-2 px-3 w-full rounded-lg hover:bg-gray-700"
-                href="https://gitlab.com/n8petersen"
-                target="blank"
-                >GitLab</a
-              >
-            </li>
-            <li>
-              <a
-                class="text-white hover:text-blue-400 block py-2 px-3 w-full rounded-lg hover:bg-gray-700"
-                href="https://github.com/n8petersen"
-                target="blank"
-                >GitHub</a
-              >
-            </li>
-            <li>
-              <a
-                class="text-white hover:text-blue-400 block py-2 px-3 w-full rounded-lg hover:bg-gray-700"
-                href="https://www.linkedin.com/in/n8petersen/"
-                target="blank"
-                >LinkedIn</a
-              >
-            </li>
-            <li class="group">
-              <button
-                type="button"
-                class="flex items-center hover:text-blue-400 text-white py-2 px-3 w-full rounded-lg hover:bg-gray-700"
-                onclick="toggleDropdown('resume-dropdown')"
-              >
+<body class="bg-slate-600 dark:bg-slate:700 flex flex-col h-screen">
+  <!-- Nav Bar-->
+  <div class="border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 h-30">
+    <nav class="mx-auto w-full max-w-screen-xl flex items-center flex-wrap justify-between">
+      <a href="https://n8pete.com" class="group flex items-center ml-5 p-2 rounded-[25px] hover:bg-gray-700">
+        <img class="h-14 lg:h-16 md:h-16 rounded-full outline-dotted outline-offset-2 outline-emerald-400"
+          src="./img/nathan-profile.jpg" alt="Nathan Petersen Profile Picture" />
+        <div class="p-4">
+          <p class="text-lg font-semibold text-slate-200 group-hover:text-emerald-300">
+            Nathan Petersen
+          </p>
+          <p class="text-sm text-slate-500 group-hover:text-slate-300">
+            DevOps, SRE, Cloud, SWE
+          </p>
+        </div>
+      </a>
+
+      <div class="w-full md:block md:w-auto mr-5 p-2">
+        <ul class="flex flex-col font-medium lg:text-lg md:space-x-4 md:flex-row">
+          <li class="">
+            <a class="text-white hover:text-blue-400 block py-2 px-3 w-full rounded-lg hover:bg-gray-700"
+              href="https://gitlab.com/n8petersen" target="blank">GitLab</a>
+          </li>
+          <li>
+            <a class="text-white hover:text-blue-400 block py-2 px-3 w-full rounded-lg hover:bg-gray-700"
+              href="https://github.com/n8petersen" target="blank">GitHub</a>
+          </li>
+          <li>
+            <a class="text-white hover:text-blue-400 block py-2 px-3 w-full rounded-lg hover:bg-gray-700"
+              href="https://www.linkedin.com/in/n8petersen/" target="blank">LinkedIn</a>
+          </li>
+          <li class="group">
+            <button type="button"
+              class="flex items-center hover:text-blue-400 text-white py-2 px-3 w-full rounded-lg hover:bg-gray-700"
+              onclick="toggleDropdown('resume-dropdown')">
               Resume+Skills
-                <svg
-                  class="w-2.5 h-2.5 ms-1.5 stroke-current stroke-2"
-                  viewBox="0 0 10 3"
-                >
-                  <path stroke-linecap="round" d="m1 1 4 4 4-4" />
-                </svg>
-              </button>
-            </li>
-            <li class="group">
-              <button
-                type="button"
-                class="flex items-center hover:text-blue-400 text-white py-2 px-3 w-full rounded-lg hover:bg-gray-700"
-                onclick="toggleDropdown('project-dropdown')"
-              >
-                Projects
-                <svg
-                  class="w-2.5 h-2.5 ms-1.5 stroke-current stroke-2"
-                  viewBox="0 0 10 3"
-                >
-                  <path stroke-linecap="round" d="m1 1 4 4 4-4" />
-                </svg>
-              </button>
-            </li>
-          </ul>
-        </div>
+              <svg class="w-2.5 h-2.5 ms-1.5 stroke-current stroke-2" viewBox="0 0 10 3">
+                <path stroke-linecap="round" d="m1 1 4 4 4-4" />
+              </svg>
+            </button>
+          </li>
+          <li class="group">
+            <button type="button"
+              class="flex items-center hover:text-blue-400 text-white py-2 px-3 w-full rounded-lg hover:bg-gray-700"
+              onclick="toggleDropdown('project-dropdown')">
+              Projects
+              <svg class="w-2.5 h-2.5 ms-1.5 stroke-current stroke-2" viewBox="0 0 10 3">
+                <path stroke-linecap="round" d="m1 1 4 4 4-4" />
+              </svg>
+            </button>
+          </li>
+        </ul>
       </div>
+  </div>
 
-      <div
-        hidden
-        id="resume-dropdown"
-        class="dropdowns border-y bg-gray-800 border-gray-600"
-      >
-        <div
-          class="grid max-w-screen-xl px-4 py-5 mx-auto text-white sm:grid-cols-2 md:px-6"
-        >
-          <a
-            href="https://resume.n8pete.com"
-            rel="noopener noreferrer"
-            class="hover:text-blue-400 text-white block group p-3 m-3 rounded-lg hover:bg-gray-700"
-          >
-            <div class="font-semibold">Resume</div>
-            <span class="text-sm text-slate-500 group-hover:text-slate-300"
-              >View my resume - optimized for desktop, mobile, or print</span
-            >
-          </a>
+  <div hidden id="resume-dropdown" class="dropdowns border-y bg-gray-800 border-gray-600">
+    <div class="grid max-w-screen-xl px-4 py-5 mx-auto text-white sm:grid-cols-2 md:px-6">
+      <a href="https://resume.n8pete.com" rel="noopener noreferrer"
+        class="hover:text-blue-400 text-white block group p-3 m-3 rounded-lg hover:bg-gray-700">
+        <div class="font-semibold">Resume</div>
+        <span class="text-sm text-slate-500 group-hover:text-slate-300">View my resume - optimized for desktop, mobile,
+          or print</span>
+      </a>
 
-          <a
-            href="./skills"
-            rel="noopener noreferrer"
-            class="hover:text-blue-400 text-white block group p-3 m-3 rounded-lg hover:bg-gray-700"
-          >
-            <div class="font-semibold">Skills List</div>
-            <span class="text-sm text-slate-500 group-hover:text-slate-300"
-              >Summary of all my tech-related skills, broken down by
-              category.</span
-            >
-          </a>
-        </div>
-      </div>
-
-      <!-- Projects Dropdown-->
-      <div
-      hidden
-      id="project-dropdown"
-      class=" dropdowns border-y bg-gray-800 border-gray-600"
-      >
-        <div
-          class="grid max-w-screen-xl px-4 py-5 mx-auto text-white sm:grid-cols-2 md:px-6"
-        >
-          <a
-            href="https://adaptixit.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="hover:text-blue-400 text-white block group p-3 m-3 rounded-lg hover:bg-gray-700"
-          >
-            <div class="font-semibold">Adaptix IT</div>
-            <span class="text-sm text-slate-500 group-hover:text-slate-300"
-              >My IT Services and Consulting Company</span
-            >
-          </a>
-          <a
-            href="https://blog.n8pete.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="hover:text-blue-400 text-white block group p-3 m-3 rounded-lg hover:bg-gray-700"
-          >
-            <div class="font-semibold">Blog Site</div>
-            <span class="text-sm text-slate-500 group-hover:text-slate-300"
-              >My Tech blog, where I discuss various tech projects I'm working on</span
-            >
-          </a>
-          <a
-            href="https://helpukraine.n8pete.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="hover:text-blue-400 text-white block group p-3 m-3 rounded-lg hover:bg-gray-700"
-          >
-            <div class="font-semibold">Ukraine Site</div>
-            <span class="text-sm text-slate-500 group-hover:text-slate-300"
-              >Currated list of simple ways to help Ukraine</span
-            >
-          </a>
-        </div>
-      </div>
-      <!-- End Projects Dropdown-->
-    </nav>
-    <!-- End Nav Bar-->
-
-    <!-- Text Body-->
-    <div class="p-4 flex flex-col justify-center items-center flex-wrap text-center h-full">
-      <h1 class="text-4xl md:text-6xl font-bold text-emerald-300">Hello World!</h1>
-
-      <p class="text-emerald-100 text-md md:text-lg py-2">
-        Welcome to my website, home to my personal
-        portfolio.
-      </p>
-
-      <p class="text-emerald-100 text-md md:text-lg py-2">
-        Check out my Git profiles, LinkedIn, Resume, Skills, and projects I've created.
-      </p>
-
-      <p class="text-emerald-100 text-md md:text-lg py-2">
-        You can also find my socials on the bottom of the page.
-      </p>
-
-      <p class="text-emerald-100 text-md md:text-lg py-2">
-        This website was created using Plain HTML + Tailwind CSS. Vue version coming soon.
-      </p>
-      <p class="text-emerald-400 text-md md:text-lg py-2">
-        You can reach me by email at:
-        <a
-          href="mailto:contact@n8pete.com"
-          class="hover:text-emerald-200 underline underline-offset-2"
-          >contact@n8pete.com</a
-        >
-      </p>
+      <a href="./skills" rel="noopener noreferrer"
+        class="hover:text-blue-400 text-white block group p-3 m-3 rounded-lg hover:bg-gray-700">
+        <div class="font-semibold">Skills List</div>
+        <span class="text-sm text-slate-500 group-hover:text-slate-300">Summary of all my tech-related skills, broken
+          down by
+          category.</span>
+      </a>
     </div>
-    <!-- End Text Body-->
-  
-    <!-- Footer-->
-    <footer class="static inset-x-0 bottom-0 bg-gray-900 h-30">
-      <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
-        <div class="md:flex md:items-center md:justify-between text-center">
-            <p class="text-sm sm:text-center text-gray-400 select-none py-2">© 2024 Nathan Petersen. All Rights Reserved.</p>
-            <p class="text-sm sm:text-center text-gray-400 select-none group">View the repo on 
-              <a target="blank" href="https://gitlab.com/n8petersen/main-website" class="underline hover:text-white">GitLab</a>
-            </p>
-            <div class="flex mt-4 md:mt-0 justify-center md:justify-normal gap-x-3">
-                <a target="blank" href="https://gitlab.com/n8petersen" class="text-gray-500 hover:text-white">
-                  <i class="fa fa-gitlab"></i>
-                  <span class="sr-only">GitLab</span>
-                </a>
-                <a target="blank" href="https://github.com/n8petersen" class="text-gray-500 hover:text-white">
-                  <i class="fa fa-github"></i>
-                  <span class="sr-only">GitHub</span>
-                </a>
-                <a target="blank" href="https://www.linkedin.com/in/n8petersen/" class="text-gray-500 hover:text-white">
-                  <i class="fa fa-linkedin"></i>
-                  <span class="sr-only">LinkedIn</span>
-                </a>
-                <a target="blank" href="mailto:contact@n8pete.com" class="text-gray-500 hover:text-white">
-                  <i class="fa fa-envelope"></i>
-                  <span class="sr-only">Email</span>
-                </a>
-            </div>
-            <div class="hidden">
-              <a rel="me" href="https://mastodon.social/@n8petersen">Mastodon</a>
-            </div>
+  </div>
+
+  <!-- Projects Dropdown-->
+  <div hidden id="project-dropdown" class=" dropdowns border-y bg-gray-800 border-gray-600">
+    <div class="grid max-w-screen-xl px-4 py-5 mx-auto text-white sm:grid-cols-2 md:px-6">
+      <a href="https://adaptixit.com" target="_blank" rel="noopener noreferrer"
+        class="hover:text-blue-400 text-white block group p-3 m-3 rounded-lg hover:bg-gray-700">
+        <div class="font-semibold">Adaptix IT</div>
+        <span class="text-sm text-slate-500 group-hover:text-slate-300">My IT Services and Consulting Company</span>
+      </a>
+      <a href="https://blog.n8pete.com" target="_blank" rel="noopener noreferrer"
+        class="hover:text-blue-400 text-white block group p-3 m-3 rounded-lg hover:bg-gray-700">
+        <div class="font-semibold">Blog Site</div>
+        <span class="text-sm text-slate-500 group-hover:text-slate-300">My Tech blog, where I discuss various tech
+          projects I'm working on</span>
+      </a>
+      <a href="https://helpukraine.n8pete.com" target="_blank" rel="noopener noreferrer"
+        class="hover:text-blue-400 text-white block group p-3 m-3 rounded-lg hover:bg-gray-700">
+        <div class="font-semibold">Ukraine Site</div>
+        <span class="text-sm text-slate-500 group-hover:text-slate-300">Currated list of simple ways to help
+          Ukraine</span>
+      </a>
+    </div>
+  </div>
+  <!-- End Projects Dropdown-->
+  </nav>
+  <!-- End Nav Bar-->
+
+  <!-- Text Body-->
+  <div class="p-4 flex flex-col justify-center items-center flex-wrap text-center h-full">
+    <h1 class="text-4xl md:text-6xl font-bold text-emerald-300">Hello World!</h1>
+
+    <p class="text-emerald-100 text-md md:text-lg py-2">
+      Welcome to my website, home to my personal
+      portfolio.
+    </p>
+
+    <p class="text-emerald-100 text-md md:text-lg py-2">
+      Check out my Git profiles, LinkedIn, Resume, Skills, and projects I've created.
+    </p>
+
+    <p class="text-emerald-100 text-md md:text-lg py-2">
+      You can also find my socials on the bottom of the page.
+    </p>
+
+    <p class="text-emerald-100 text-md md:text-lg py-2">
+      This website was created using Plain HTML + Tailwind CSS. Vue version coming soon.
+    </p>
+    <p class="text-emerald-400 text-md md:text-lg py-2">
+      You can reach me by email at:
+      <a href="mailto:contact@n8pete.com"
+        class="hover:text-emerald-200 underline underline-offset-2">contact@n8pete.com</a>
+    </p>
+  </div>
+  <!-- End Text Body-->
+
+  <!-- Footer-->
+  <footer class="static inset-x-0 bottom-0 bg-gray-900 h-30">
+    <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+      <div class="md:flex md:items-center md:justify-between text-center">
+        <p class="text-sm sm:text-center text-gray-400 select-none py-2">© 2024 Nathan Petersen. All Rights Reserved.
+        </p>
+        <p class="text-sm sm:text-center text-gray-400 select-none group">View the repo on
+          <a target="blank" href="https://gitlab.com/n8petersen/main-website"
+            class="underline hover:text-white">GitLab</a>
+        </p>
+        <div class="flex mt-4 md:mt-0 justify-center md:justify-normal gap-x-3">
+          <a target="blank" href="https://gitlab.com/n8petersen" class="text-gray-500 hover:text-white">
+            <i class="fa fa-gitlab"></i>
+            <span class="sr-only">GitLab</span>
+          </a>
+          <a target="blank" href="https://github.com/n8petersen" class="text-gray-500 hover:text-white">
+            <i class="fa fa-github"></i>
+            <span class="sr-only">GitHub</span>
+          </a>
+          <a target="blank" href="https://www.linkedin.com/in/n8petersen/" class="text-gray-500 hover:text-white">
+            <i class="fa fa-linkedin"></i>
+            <span class="sr-only">LinkedIn</span>
+          </a>
+          <a target="blank" href="mailto:contact@n8pete.com" class="text-gray-500 hover:text-white">
+            <i class="fa fa-envelope"></i>
+            <span class="sr-only">Email</span>
+          </a>
+        </div>
+        <div class="hidden">
+          <a rel="me" href="https://mastodon.social/@n8petersen">Mastodon</a>
         </div>
       </div>
-    </footer>
-    <!-- End Footer-->
+    </div>
+  </footer>
+  <!-- End Footer-->
 
-    <script src="dropdown.js"></script>
-  </body>
+  <script src="dropdown.js"></script>
+</body>
+
 </html>
