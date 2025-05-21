@@ -1,5 +1,3 @@
-// For use in Google Docs to provide an easy way to push a PDF of the document to a GitHub Repo
-
 function onOpen() {
   DocumentApp.getUi()
     .createMenu('Automation')
@@ -36,7 +34,7 @@ function convertDocToPdf() {
       // Create the new PDF file
       parentFolder.createFile(docBlob.setName(pdfName));
     } else {
-      // If no parent folder is found, create in root (fallback).
+       // If no parent folder is found, create in root (fallback).
       DriveApp.createFile(docBlob.setName(pdfName));
     }
   }
@@ -46,7 +44,7 @@ function convertAndPushToGitHub() {
   var doc = DocumentApp.getActiveDocument();
   var docBlob = doc.getAs('application/pdf');
   var pdfName = 'resume.pdf';
-  var githubRepo = 'n8petersen/googledocs-pdf-test'; // Replace with your repository
+  var githubRepo = 'n8petersen/n8pete.com'; // Replace with your repository
   var githubToken = getGithubToken(); // Retrieve from script properties or secure storage
   var githubFilePath = 'public/' + pdfName; // Path within your repository
 
@@ -60,7 +58,6 @@ function convertAndPushToGitHub() {
 
 function pushFileToGithub(repo, path, token, content, fileName, branch) {
   var url = 'https://api.github.com/repos/' + repo + '/contents/' + path;
-  var message = 'Add ' + fileName + ' via Google Apps Script'; // Commit message
 
   // First check if the file exists to get the sha
   var options = {
@@ -77,16 +74,19 @@ function pushFileToGithub(repo, path, token, content, fileName, branch) {
     sha = jsonResponse.sha;
   }
   var payload = {
-    message: message,
     content: content,
     branch: branch,
   };
+
+  payload.message = 'Add ' + fileName + ' via Google Apps Script'; // Commit message
+
   if (sha) {
     payload.sha = sha;
+    payload.message = 'Update ' + fileName + ' via Google Apps Script'; // Commit message
   }
 
 
-  options = {
+   options = {
     method: 'put',
     contentType: 'application/json',
     headers: { Authorization: 'Bearer ' + token },
@@ -94,33 +94,33 @@ function pushFileToGithub(repo, path, token, content, fileName, branch) {
     muteHttpExceptions: true,
   };
 
-  response = UrlFetchApp.fetch(url, options);
-  jsonResponse = JSON.parse(response.getContentText());
+   response = UrlFetchApp.fetch(url, options);
+   jsonResponse = JSON.parse(response.getContentText());
   if (response.getResponseCode() == 200 || response.getResponseCode() == 201) {
-    Logger.log('PDF pushed to GitHub successfully: ' + jsonResponse.content.html_url);
-    DocumentApp.getUi().alert('Success', 'PDF pushed to GitHub successfully!', DocumentApp.getUi().ButtonSet.OK);
+     Logger.log('PDF pushed to GitHub successfully: ' + jsonResponse.content.html_url);
+       DocumentApp.getUi().alert('Success', 'PDF pushed to GitHub successfully!', DocumentApp.getUi().ButtonSet.OK);
   } else {
-    Logger.log('Error pushing to GitHub:' + response.getResponseCode() + ': ' + response.getContentText());
-    DocumentApp.getUi().alert('Error', 'Error pushing to GitHub: ' + response.getResponseCode() + ': ' + response.getContentText(), DocumentApp.getUi().ButtonSet.OK);
+      Logger.log('Error pushing to GitHub:' + response.getResponseCode() + ': ' + response.getContentText());
+      DocumentApp.getUi().alert('Error', 'Error pushing to GitHub: ' + response.getResponseCode() + ': ' + response.getContentText() , DocumentApp.getUi().ButtonSet.OK);
 
   }
 }
 
 function getGithubToken() {
-  // For better security, use PropertiesService to store the token and retrieve it
-  // Encrypt the token if needed
+ // For better security, use PropertiesService to store the token and retrieve it
+ // Encrypt the token if needed
   var scriptProperties = PropertiesService.getScriptProperties();
-  var githubToken = scriptProperties.getProperty('githubToken');
+    var githubToken = scriptProperties.getProperty('githubToken');
 
-  if (!githubToken) {
-    githubToken = DocumentApp.getUi().prompt('GitHub Token', 'Enter your GitHub Personal Access Token:', DocumentApp.getUi().ButtonSet.OK_CANCEL)
-    if (githubToken.getSelectedButton() == DocumentApp.getUi().Button.OK) {
-      scriptProperties.setProperty('githubToken', githubToken.getResponseText());
-      return githubToken.getResponseText();
+    if (!githubToken) {
+       githubToken =  DocumentApp.getUi().prompt('GitHub Token','Enter your GitHub Personal Access Token:',DocumentApp.getUi().ButtonSet.OK_CANCEL)
+       if (githubToken.getSelectedButton() == DocumentApp.getUi().Button.OK) {
+        scriptProperties.setProperty('githubToken', githubToken.getResponseText());
+           return githubToken.getResponseText();
+       }
+      else {
+        return null;
+      }
     }
-    else {
-      return null;
-    }
-  }
-  return githubToken;
+    return githubToken;
 }
