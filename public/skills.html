@@ -111,11 +111,16 @@
     <p class="text-emerald-100 text-lg md:text-2xl text-center px-2">This is a summary of all my tech-related skills,
       broken down by category.</p>
 
-    <!-- Top Section-->
-    <div class="p-4 grid gap-4 place-items-center place-self-center text-center w-5/6 *:w-10/12">
+    <!-- Top Section -->
+    <div class="
+        grid md:grid-cols-1 lg:grid-cols-3 gap-4 
+        place-items-center place-self-center 
+        text-center p-4 text-emerald-100
+        *:w-10/12 md:*:h-[95%] *:bg-slate-700
+        *:rounded-md *:shadow-xl *:p-5 *:m-5">
+        
       <!-- Category Table of Contents-->
-      <div id="categories"
-        class="md:hidden bg-slate-700 text-emerald-200 rounded-md shadow-xl p-5 m-5 underline underline-offset-1">
+      <div id="categories" class="md:hidden">
         <h1 class="text-2xl underline font-bold text-emerald-400">Categories</h1>
         <p class="hover:text-blue-500 hover:underline"><a href="#topten">Top Skills</a></p>
         <p class="hover:text-blue-500 hover:underline"><a href="#certificates">Certificates</a></p>
@@ -125,23 +130,8 @@
             Monitoring</a></p>
         <p class="hover:text-blue-500 hover:underline"><a href="#development">Development</a></p>
         <p class="hover:text-blue-500 hover:underline"><a href="#databases">Databases</a></p>
-
       </div>
       <!-- End Category Table of Contents-->
-    </div>
-    <!-- EndTop Section-->
-
-    <!-- Divider Bar -->
-    <hr class="md:hidden rounded-full mx-auto my-5 border-2 border-emerald-400 w-4/5">
-    <!-- End Divider Bar -->
-
-    <!-- Skill Categories-->
-    <div class="
-        grid md:grid-cols-2 2xl:grid-cols-3 gap-4 
-        place-items-center place-self-center 
-        text-center p-4 text-emerald-100
-        *:w-10/12 md:*:h-[95%] *:bg-slate-700
-        *:rounded-md *:shadow-xl *:p-5 *:m-5">
 
       <!-- Top Ten -->
       <div id="topten">
@@ -179,6 +169,21 @@
         <p class="hover:text-blue-400">Russian (Advanced-Low)</p>
       </div>
       <!-- End Languages -->
+
+    </div>
+    <!-- End Top Section -->
+
+    <!-- Divider Bar -->
+    <hr class="rounded-full mx-auto my-5 border-2 border-emerald-400 w-4/5">
+    <!-- End Divider Bar -->
+
+    <!-- Skill Categories-->
+    <div class="
+        grid md:grid-cols-2 xl:grid-cols-4 gap-4 
+        place-items-center place-self-center 
+        text-center p-4 text-emerald-100
+        *:w-10/12 md:*:h-[95%] *:bg-slate-700
+        *:rounded-md *:shadow-xl *:p-5 *:m-5">
 
       <!-- Infrastructure & DevOps -->
       <div id="infrastructure-devops">
